@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Adel - Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="M%20logo%20(Community).svg">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="bg-layer" id="bgLayer">
+        <!-- JS will inject background floating shapes here -->
+    </div>
+
+    <!-- Centered giant faint logo watermark in background -->
+    <div class="bg-watermark">
+        <svg viewBox="0 0 100 100" width="100%" height="100%">
+            <path d="M50 5 L95 95 L5 95 Z" fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.03" />
+            <path d="M50 95 L50 5 M5 95 L95 5 M95 95 L5 5" fill="none" stroke="#ffffff" stroke-width="1.5"
+                opacity="0.03" />
+        </svg>
+    </div>
+
+    <header>
+        <div class="logo">
+            <img src="M%20logo%20(Community).svg" alt="M logo" width="60" height="60">
+            <span></span>
+        </div>
+        <nav>
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#portfolio">PORTFOLIO</a>
+            <a href="#contact">CONTACT</a>
+        </nav>
+    </header>
+
+    <aside class="socials">
+        <a href="https://www.facebook.com/michaeladel06" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://wa.me/+201202315383" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://github.com/michaeladel319" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/michael-adel-0a62a73b9/" target="_blank"><i
+                class="fa-brands fa-linkedin-in"></i></a>
+    </aside>
+
+    <aside class="scroll-down">
+        <span>SCROLL DOWN</span>
+        <i class="fa-solid fa-arrow-down-long"></i>
+    </aside>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="profile-container">
+                <div class="number-01"></div>
+                <div class="blob-bg">
+                    <img src="profile.png" alt="Abas Turabli" class="profile-img">
+                </div>
+            </div>
+
+            <div class="hero-text">
+                <h1>Hi, I'm</h1>
+                <h2 data-text="MICHAEL"></h2>
+                <h3>COMPUTER SCIENCE STUDENT</h3>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="section-title">
+                <h2>ABOUT ME<span>.</span></h2>
+                <div class="title-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="intro">I'm a passionate Computer Science student and Creative Developer bridging the gap
+                        between design and engineering.</p>
+                    <p>My goal is to craft digital experiences that look beautiful and function flawlessly under the
+                        hood. I specialize in modern Web Technologies, bringing abstract concepts into living,
+                        interactive interfaces.</p>
+                    <div class="skills-container">
+                        <div class="skill-tag">JavaScript / TypeScript</div>
+                        <div class="skill-tag">React & Next.js</div>
+                        <div class="skill-tag">CSS & Framer Motion</div>
+                        <div class="skill-tag">Node.js & Express</div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-box">
+                        <h3>02+</h3>
+                        <p>Years</p>
+                        <span>Experience</span>
+                    </div>
+                    <div class="stat-box">
+                        <h3>10+</h3>
+                        <p>Projects</p>
+                        <span>Completed</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio" id="portfolio">
+            <div class="section-title">
+                <h2>MY WORK<span>.</span></h2>
+                <div class="title-line"></div>
+            </div>
+            <div class="portfolio-grid">
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="x.png" alt="Fintech Dashboard Project">
+                    </div>
+                    <div class="project-info">
+                        <h3>Fintech Dashboard</h3>
+                        <p>A modern financial dashboard with real-time data visualization and sleek dark mode UI.</p>
+                        <a href="https://bingostream.vercel.app" class="btn" target="_blank">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="preivew.png" alt="E-Commerce Platform Project">
+                    </div>
+                    <div class="project-info">
+                        <h3>E-Commerce Platform</h3>
+                        <p>Next.js based immersive shopping experience with seamless animations and Stripe integration.
+                        </p>
+                        <a href="https://ctrlshoe.vercel.app/" class="btn" target="_blank">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="ai.png" alt="AI SaaS Application Project">
+                    </div>
+                    <div class="project-info">
+                        <h3>AI SaaS Application</h3>
+                        <p>A full-stack web application leveraging AI models to generate interactive content.</p>
+                        <a href="#" class="btn" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="contact-container">
+                <div class="contact-header">
+                    <h2>LET'S WORK</h2>
+                    <h2>TOGETHER<span>.</span></h2>
+                </div>
+                <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                    <!-- Replace YOUR_ACCESS_KEY_HERE with your Web3Forms access key -->
+                    <input type="hidden" name="access_key" value="cadcb35f-c2ef-47a9-89de-6b0b79c5792c">
+                    
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Tell me about your project" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">SEND MESSAGE</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
